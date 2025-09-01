@@ -1,40 +1,43 @@
-import Footer from '@/components/Footer';
-import WhatsAppButton from '@/components/WhatsAppButton';
-
-export default function Home() {
+export default function Footer() {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Hero */}
-      <header className="relative h-96 bg-gradient-to-r from-blue-900 to-teal-700 flex items-center justify-center text-white">
-        <div className="text-center z-10">
-          <h1 className="text-4xl md:text-6xl font-bold">Vision to the World</h1>
-          <p className="mt-4 text-lg">Luxury • Adventure • Seamless Booking</p>
-          <button className="mt-6 bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-full font-semibold">
-            Explore Destinations
-          </button>
+    <footer className="bg-gray-900 text-white py-12 px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <h3 className="text-xl font-bold mb-4">Vision to the World</h3>
+          <p className="text-gray-300">Luxury. Adventure. Trust. We plan unforgettable journeys.</p>
         </div>
-        <div className="absolute inset-0 bg-black opacity-30"></div>
-        <img
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
-          alt="Tropical Beach"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </header>
-
-      {/* Main Content */}
-      <main className="flex-1">
-        <section className="py-12 px-6 text-center">
-          <h2 className="text-3xl font-bold text-gray-800">Your Journey Starts Here</h2>
-          <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-            Whether you seek luxury resorts, budget backpacking, or corporate travel, we craft perfect trips with real-time booking, 24/7 support, and trusted service.
-          </p>
-        </section>
-      </main>
-
-      {/* Sticky Booking Button */}
-      <button className="fixed bottom-20 right-6 bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg z-40 font-semibold">
-        📅 Book Now
-      </button>
+        <div>
+          <h4 className="font-semibold mb-4">Destinations</h4>
+          <ul className="space-y-2 text-gray-300">
+            <li>Bali</li>
+            <li>Dubai</li>
+            <li>Paris</li>
+            <li>Maldives</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="font-semibold mb-4">Support</h4>
+          <ul className="space-y-2 text-gray-300">
+            <li>Help Center</li>
+            <li>Refund Policy</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="font-semibold mb-4">Follow Us</h4>
+          <div className="flex space-x-4">
+            <a href="#" className="text-blue-400">FB</a>
+            <a href="#" className="text-pink-400">IG</a>
+            <a href="#" className="text-blue-300">TT</a>
+          </div>
+        </div>
+      </div>
+      <div className="max-w-6xl mx-auto mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+        © 2025 Vision to the World. All rights reserved. IATA Certified.
+      </div>
+    </footer>
+  );
+}      </button>
 
       {/* WhatsApp Button */}
       <WhatsAppButton />
