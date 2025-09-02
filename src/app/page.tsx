@@ -35,13 +35,4 @@ export default function Home() {
       <Footer />
     </div>
   );
-}      </button>
-
-      {/* WhatsApp Button */}
-      <WhatsAppButton />
-
-      {/* Footer */}
-      <Footer />
-    </div>
-  );
 }
