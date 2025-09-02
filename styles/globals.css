@@ -1,0 +1,55 @@
+:root {
+  --primary: #2DC7FF;
+  --secondary: #41D67C;
+  --accent: #FF9832;
+  --dark: #232946;
+  --light: #f6faff;
+  --font-main: 'Montserrat', Arial, sans-serif;
+  --font-header: 'Playfair Display', serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--light);
+  margin: 0;
+  color: var(--dark);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover { color: var(--accent); }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-header);
+  margin: 0 0 0.5em 0;
+}
+
+.button {
+  background: var(--primary);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 0.8em 2em;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.2s;
+}
+.button:hover {
+  background: var(--accent);
+}
+
+input, select, textarea {
+  font-family: var(--font-main);
+  font-size: 1em;
+}
+
+@media (max-width: 800px) {
+  header, main, footer {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
